@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best online food ordering site</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 930px)" href="phone.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/login.css">
+    <link rel="stylesheet" media="screen and (max-width: 930px)" href="./CSS/phone.css">
 </head>
 
 <body>
@@ -16,10 +17,10 @@
                 <img src="logo/logo.png">
             </div>
             <ul>
-                <li class="list"><a href="#home"s>Home</a></li>
+                <li class="list"><a href="#home">Home</a></li>
                 <li class="list"><a href="#services-container">Services</a></li>
                 <li class="list"><a href="#client-section">Our clients</a></li>
-             <li class="list"><a href="#contact-section">Contact us</a></li>
+                <li class="list"><a href="#contact-section">Contact us</a></li>
             </ul>
         </nav>  
         <section id="home">
@@ -28,7 +29,7 @@
             sapiente itaque?</p>
             <p>Lorem fugit, debitis rem soluta quam quo ipsam
             sapiente itaque?</p>
-            <button class="btn">Order Now</button>
+            <button class="btn" id="btn" onclick="handleOrder()">Order Now</button>
         </section>
     </div>
         <section id="services-container">
@@ -102,11 +103,18 @@
                 </div>
                 <button class="btn center" id="send">Send</button>
             </form>
+            
         </section>
 
         <footer class="center">
             copyright &copy; www.onlineMeal.com. All right reserved!
         </footer>
+        <script>
+            function handleOrder(){
+                document.location.href="login.html";
+            }
+        </script>
+
 
 </body>
 </html>

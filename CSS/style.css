@@ -176,7 +176,7 @@ footer{
 #client-section::before{
     content: "";
     position: absolute;
-    background: url('logo/backlogo.jpg') no-repeat center center/cover;
+    background: url('../logo/backlogo.jpg') no-repeat center center/cover;
     width: 90%;
     height: 350px;
     z-index: -1;
@@ -226,7 +226,7 @@ footer{
 #contact-section::before{
     content: "";
     position: absolute;
-    background: url('logo/backlogo.jpg') no-repeat center center/cover;
+    background: url('../logo/backlogo.jpg') no-repeat center center/cover;
     width: 90%;
     height: 345px;
     z-index: -1;
@@ -261,19 +261,19 @@ footer{
 
 @keyframes animate{
     0%,100%{
-        background-image: url("logo/food.jpg");
+        background-image: url("../logo/food.jpg");
         opacity: 0.90;
     }
     25%{
-        background-image: url("logo/food_back.png");
+        background-image: url("../logo/food_back.png");
         opacity: 0.90;
     }
     50%{
-        background-image: url("logo/homeBackgroun.png");
+        background-image: url("../logo/homeBackgroun.png");
         opacity: 0.90;
     }
     75%{
-        background-image: url("logo/food_BAck_3.png");   
+        background-image: url("../logo/food_BAck_3.png");   
         opacity: 0.90;
     }
 }

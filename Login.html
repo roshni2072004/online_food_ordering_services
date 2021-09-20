@@ -14,12 +14,14 @@
                 <div id="btn1"></div>
                 <button type="button" class="toggle-btn" onclick="login()">Log In</button>
                 <button type="button" class="toggle-btn" onclick="register()">Register</button>
-                
             </div> 
+            
+            <!-- <div class="centre">login with</div> -->
             <div class="social-icons">
-                <img src="./logo/fb.png" alt="fb">
-                <img src="./logo/google.webp" alt="google">
-                <img src="./logo/twwet.png" alt="tweeter">
+                <img onclick="handlelogin()" id="fb " src="./logo/fb.png" alt="fb">
+                <img onclick="googlelogin()" src="./logo/google.webp" id="gog" alt="google">
+                <img onclick="tweetlogin()" src="./logo/twwet.png" id="tweet" alt="tweeter">
+                <div class="centre">or</div>
             </div>
             <form id="login" class="input-grp">
                 <!-- <i class="fas fa-user" aria-hidden="true"></i> -->
@@ -55,7 +57,17 @@
             y.style.left = "450px";
             z.style.left = "0";
         }
-        
+        function handlelogin(){
+            document.location.href="https://www.facebook.com/";
+        }
+        function googlelogin(){
+            document.location.href="https://accounts.google.com/";
+        }
+        function tweetlogin(){
+            document.location.href="https://twitter.com/";
+        }
+
+
     </script>
 </body>
 </html>

@@ -45,6 +45,7 @@ footer{
 #navbar{
     display: flex;
     position: fixed;
+    top: 0px;
     align-items: center;
     margin-top: 0px;;  
 }

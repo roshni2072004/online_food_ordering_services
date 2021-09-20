@@ -47,17 +47,18 @@ footer{
     position: fixed;
     top: 0px;
     align-items: center;
-    margin-top: 0px;;  
+    margin-top: 0px;
+    width: 100%;  
 }
-@media (min-height: 300px) {
+/* @media (min-height: 300px) {
     nav ul {
       position: sticky;
       top: 0;
     }
-  }
+  } */
 
 #logo{
-    margin:10px 20px ;  
+    margin: 0px 15px ;  
 }
 #logo img{
     height:60px;
@@ -68,21 +69,20 @@ footer{
     content: "";
     background-color: rgb(15, 15, 15);
     position: absolute;
-    top:0;
+    top: 0px;
     z-index: -1;
     height: 60px;
     width: 100%;
     opacity: 0.4;
 }
 #navbar ul {
-        display: flex;
-        align-items: center;
-     }
+    display: flex;
+    align-items: center;
+}
 
 #navbar ul li {
     margin: 5px 30px;
     padding: 2px 4px;
-    font-size: large;
     font-weight: bold;
     list-style: none;
     display: block;
@@ -90,6 +90,7 @@ footer{
 #navbar li a{  
     text-decoration: none;
     color: honeydew;
+    font-size: large;
 }
 #navbar li a:hover{
     color:black;

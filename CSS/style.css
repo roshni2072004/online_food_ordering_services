@@ -67,6 +67,7 @@ footer{
     content: "";
     background-color: rgb(15, 15, 15);
     position: absolute;
+    top:0;
     z-index: -1;
     height: 60px;
     width: 100%;

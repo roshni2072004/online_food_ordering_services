@@ -1,0 +1,30 @@
+*{
+    top: 0;
+    font-size: 14px;
+}
+.form-box {
+    width: 87%;
+    height: 75%;
+    margin: 15% auto;
+}
+.btn-box {
+    width: 220px;
+    font-size: 10px;
+    margin: 20px auto;
+}
+#btn1{
+    width: 108px ;
+}
+.toggle-btn{
+    padding: 10px 30px;
+}
+
+.input-grp {
+    margin-left: 0;
+}
+.submit-btn {
+    width: 65%;
+    margin-left: 4% ;
+    margin-right: 5%;
+}
+

@@ -58,6 +58,25 @@
 .slider{
     height: 350px;
 }
+@keyframes animate {
+    0%,100% {
+      background-image: url("../logo/kitchen1.jpg");
+      width: 100%;
+      opacity: 0.9;
+    }
+    25% {
+      background-image: url("../logo/food_back.png");
+      opacity: 0.9;
+    }
+    50% {
+      background-image: url("../logo/hotel_kitchen1.jpg");
+      opacity: 0.9;
+    }
+    75% {
+      background-image: url("../logo/indian-food.webp");
+      opacity: 0.9;
+    }
+  }
 #home p{
     font-size: 18px;
     padding: 3px 5px;
@@ -153,7 +172,7 @@
 #contact-section::before{
     content: "";
     position: absolute;
-    background: url('logo/backlogo.jpg') no-repeat center center/cover;
+    background: url('../logo/backlogo.jpg') no-repeat center center/cover;
     width: 95%;
     height: 290px;
     z-index: -1;
@@ -176,21 +195,5 @@ footer{
     height: 25px;
 }
 
-@keyframes animate{
-    0%,100%{
-        background-image: url("logo/food.jpg");
-        opacity: 0.90;
-    }
-    25%{
-        background-image: url("logo/food_back.png");
-        opacity: 0.90;
-    }
-    50%{
-        background-image: url("logo/homeBackgroun.png");
-        opacity: 0.90;
-    }
-    75%{
-        background-image: url("logo/food_BAck_3.png");   
-        opacity: 0.90;
-    }
-}
+
+

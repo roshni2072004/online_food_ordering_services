@@ -6,40 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="./CSS/Login.css">
+    <link rel="stylesheet" media="screen and (max-width: 420px)" href="./CSS/Phnlogin.css">
 </head>
 <body>
     <div class="container">
         <div class="form-box">
-            <div class="btn-box">
-                <div id="btn1"></div>
-                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
-                <button type="button" class="toggle-btn" onclick="register()">Register</button>
-            </div> 
-            
-            <!-- <div class="centre">login with</div> -->
-            <div class="social-icons">
-                <img onclick="handlelogin()" id="fb " src="./logo/fb.png" alt="fb">
-                <img onclick="googlelogin()" src="./logo/google.webp" id="gog" alt="google">
-                <img onclick="tweetlogin()" src="./logo/twwet.png" id="tweet" alt="tweeter">
-                <div class="centre">or</div>
+            <div class="content">
+                <div class="btn-box">
+                    <div id="btn1"></div>
+                    <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                    <button type="button" class="toggle-btn" onclick="register()">Register</button>
+                </div> 
+                
+                <!-- <div class="centre">login with</div> -->
+                <div class="social-icons">
+                    <img onclick="handlelogin()" id="fb " src="./logo/fb.png" alt="fb">
+                    <img onclick="googlelogin()" src="./logo/google.webp" id="gog" alt="google">
+                    <img onclick="tweetlogin()" src="./logo/twwet.png" id="tweet" alt="tweeter">
+                    <div class="centre">or</div>
+                </div>
+                <form id="login" class="input-grp">
+                    <!-- <i class="fas fa-user" aria-hidden="true"></i> -->
+                    <input type="text" class="input-field" placeholder="User Id / Email-id" required>        
+                    <!-- <i class="fas fa-lock"></i> -->
+                    <input type="text" class="input-field" placeholder="Enter Password" required>         
+                    <input type="checkbox" class="check-box"><span></span>Remember Password</span><br>
+                    <button type="submit" class="submit-btn">Log in</button>
+                </form>
+                <form id="register" class="input-grp">
+                    <!-- <i class="far fa-user"></i> -->
+                    <input type="text" class="input-field" placeholder="User Id" required>
+                    <input type="email" class="input-field" placeholder="E-mail Id" required>
+                    <!-- <i class="fas fa-lock " aria-hidden="true"></i> -->
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box" required><span></span>I agree to the terms & conditions</span><br>
+                    <button type="submit" class="submit-btn" onclick="registered()">Register</button>
+                </form>
             </div>
-            <form id="login" class="input-grp">
-                <!-- <i class="fas fa-user" aria-hidden="true"></i> -->
-                <input type="text" class="input-field" placeholder="User Id / Email-id" required>        
-                <!-- <i class="fas fa-lock"></i> -->
-                <input type="text" class="input-field" placeholder="Enter Password" required>         
-                <input type="checkbox" class="check-box"><span></span>Remember Password</span><br>
-                <button type="submit" class="submit-btn">Log in</button>
-            </form>
-            <form id="register" class="input-grp">
-                <!-- <i class="far fa-user"></i> -->
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="email" class="input-field" placeholder="E-mail Id" required>
-                <!-- <i class="fas fa-lock " aria-hidden="true"></i> -->
-                <input type="password" class="input-field" placeholder="Enter Password" required>
-                <input type="checkbox" class="check-box"><span></span>I agree to the terms & conditions</span><br>
-                <button type="submit" class="submit-btn">Register</button>
-            </form>
         </div>
     </div>
     <script>
@@ -67,7 +70,17 @@
             document.location.href="https://twitter.com/";
         }
 
+        function registered(){
+            // if(y.input.value!=NULL)
 
+            if (document.input-grp.input.value==="" )
+            {
+                alert ( "Please fill in the 'Your Name' box." );
+            }
+            else{
+                    alert("you are registered");
+            }
+        }
     </script>
 </body>
 </html>

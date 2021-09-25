@@ -10,7 +10,7 @@ html{
 .h-primary{
     font-family: 'Bree Serif' ;
     font-size: 3rem;
-    margin-top : 0px;
+    margin-top: 60px;
     padding: 8px 0px;      
     animation-name: heading;
     animation-duration: 1.5s;
@@ -66,7 +66,7 @@ footer{
     z-index: -1;
     height: 60px;
     width: 100%;
-    opacity: 0.4;
+    opacity: 0.5;
 }
 #navbar ul {
     display: flex;
@@ -102,6 +102,35 @@ footer{
     margin-bottom: 60px;
     height: 300px;
 }
+.slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 430px;
+    animation: animate 16s ease-out infinite;
+    background-size: cover;
+  }
+  
+  @keyframes animate {
+    0%,100% {
+      background-image: url("../logo/kitchen1.jpg");
+      width: 100%;
+      opacity: 0.9;
+    }
+    25% {
+      background-image: url("../logo/food_back.png");
+      opacity: 0.9;
+    }
+    50% {
+      background-image: url("../logo/hotel_kitchen1.jpg");
+      opacity: 0.9;
+    }
+    75% {
+      background-image: url("../logo/indian-food.webp");
+      opacity: 0.9;
+    }
+  }
 #home p{
     padding: 5px;
     font-size: 1.5rem;
@@ -109,7 +138,7 @@ footer{
     color: black;
 }
 #home h1{
-    color:whitesmoke;
+    color:white;
     text-align: center;
 }
 .btn{
@@ -141,8 +170,7 @@ footer{
     border-radius: 10px;
 }
 #services-container{
-    margin-top: 1000px;
-    margin: 380px 20px;
+    margin: 438px 20px;
     margin-bottom: 60px;
 }
 
@@ -246,32 +274,3 @@ footer{
     color: white;
     height: 30px;
 }
-
-.slider{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 380px;
-    animation: animate 15s ease-in-out infinite;
-}
-
-@keyframes animate{
-    0%,100%{
-        background-image: url("../logo/food.jpg");
-        opacity: 0.90;
-    }
-    25%{
-        background-image: url("../logo/food_back.png");
-        opacity: 0.90;
-    }
-    50%{
-        background-image: url("../logo/homeBackgroun.png");
-        opacity: 0.90;
-    }
-    75%{
-        background-image: url("../logo/food_BAck_3.png");   
-        opacity: 0.90;
-    }
-}
- 

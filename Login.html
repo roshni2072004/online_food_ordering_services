@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="form-box">
-            <div class="content">
+            <!-- <div class="content"> -->
                 <div class="btn-box">
                     <div id="btn1"></div>
                     <button type="button" class="toggle-btn" onclick="login()">Log In</button>
@@ -25,24 +25,26 @@
                     <img onclick="tweetlogin()" src="./logo/twwet.png" id="tweet" alt="tweeter">
                     <div class="centre">or</div>
                 </div>
-                <form id="login" class="input-grp">
-                    <!-- <i class="fas fa-user" aria-hidden="true"></i> -->
-                    <input type="text" class="input-field" placeholder="User Id / Email-id" required>        
-                    <!-- <i class="fas fa-lock"></i> -->
-                    <input type="text" class="input-field" placeholder="Enter Password" required>         
-                    <input type="checkbox" class="check-box"><span></span>Remember Password</span><br>
-                    <button type="submit" class="submit-btn">Log in</button>
-                </form>
-                <form id="register" class="input-grp">
-                    <!-- <i class="far fa-user"></i> -->
-                    <input type="text" class="input-field" placeholder="User Id" required>
-                    <input type="email" class="input-field" placeholder="E-mail Id" required>
-                    <!-- <i class="fas fa-lock " aria-hidden="true"></i> -->
-                    <input type="password" class="input-field" placeholder="Enter Password" required>
-                    <input type="checkbox" class="check-box" required><span></span>I agree to the terms & conditions</span><br>
-                    <button type="submit" class="submit-btn" onclick="registered()">Register</button>
-                </form>
-            </div>
+                <div>
+                    <form id="login" class="input-grp">
+                        <!-- <i class="fas fa-user" aria-hidden="true"></i> -->
+                        <input type="text" class="input-field" placeholder="User Id / Email-id" required>        
+                        <!-- <i class="fas fa-lock"></i> -->
+                        <input type="text" class="input-field" placeholder="Enter Password" required>         
+                        <input type="checkbox" class="check-box"><span>Remember Password</span><br>
+                        <button type="submit" class="submit-btn">Log in</button>
+                    </form>
+                    <form id="register" class="input-grp">
+                        <!-- <i class="far fa-user"></i> -->
+                        <input type="text" class="input-field" placeholder="User Id" required>
+                        <input type="email" class="input-field" placeholder="E-mail Id" required>
+                        <!-- <i class="fas fa-lock " aria-hidden="true"></i> -->
+                        <input type="password" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" class="check-box" required><span></span>I agree to the terms & conditions</span><br>
+                        <button type="submit" class="submit-btn" onclick="registered()">Register</button>
+                    </form>
+                </div>
+            <!-- </div> -->
         </div>
     </div>
     <script>
@@ -51,12 +53,12 @@
         var z= document.getElementById("btn1");
         function register(){
             x.style.left = "-400px";
-            y.style.left ="50px";
+            y.style.left ="8%";
             z.style.left ="110px";
         }
 
         function login(){
-            x.style.left = "50px";
+            x.style.left = "8%";
             y.style.left = "450px";
             z.style.left = "0";
         }

@@ -10,6 +10,7 @@
 .container{
   position: absolute;
   background:url('../logo/loginback.jpg') no-repeat center center/cover;
+  opacity: 0.9;
   width: 100%;
   height: 100%;
   border-radius: 35px;
@@ -17,12 +18,16 @@
 }
 .form-box {
   width: 380px;
-  height: 480px;
+  height: 75%;
   position: relative;
-  margin: 6% auto;
+  margin: 7% auto;
   background: rgba(0,0,0,0.3);
   padding: 5px;
   overflow: hidden;
+  color: white;
+}
+.centre{
+  margin-top: 18px;
 }
 input{
   font-size: 17px;
@@ -34,9 +39,13 @@ input{
 .btn-box {
   width: 230px;
   margin: 35px auto;
+  margin-top: 10%;
   position: relative;
   box-shadow: 0 0 20px 9px #ff61241f;
   border-radius: 30px;
+}
+.btn-box button{
+  color: white;
 }
 .toggle-btn {
   padding: 10px 30px;
@@ -57,7 +66,7 @@ input{
   transition: 0.5s;
 }
 .social-icons {
-  margin: 40px auto;
+  margin: 25px auto;
   text-align: center;
 }
 .social-icons img {
@@ -69,8 +78,8 @@ input{
   border-radius: 50%;
 }
 .input-grp {
-  top: 180px;
   position: absolute;
+  top: 40%;
   width: 280px;
   transition: 0.5s;
   color: white;
@@ -99,21 +108,21 @@ input{
   cursor: pointer;
   display: block;
   margin: auto;
+  margin-top: 10%;
   background: linear-gradient(to right, #ff105f, #ffad06);
   border: 0;
   outline: none;
   border-radius: 30px;
+  color: white;
 }
-span{
-    color: #777;
-    font-size: 15px;
-    bottom: 68px;
-    position: absolute;
+#login span{
+    font-size: 17px;
+    margin-top:50px;
 }
 
 #login{
-    left: 15%;
+    left: 10%;
 }
 #register{
-    left: 450px;
+    left: 100%;
 }

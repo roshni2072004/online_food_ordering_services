@@ -29,12 +29,12 @@
 .centre{
   margin-top: 18px;
 }
-input{
+.input-grp input{
   font-size: 17px;
   font-weight: 600;
 }
 ::-webkit-input-placeholder{
-  color: rgb(189, 234, 255);
+  color: rgb(226, 212, 212);
 }
 .btn-box {
   width: 230px;

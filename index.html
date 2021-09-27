@@ -5,35 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best online food ordering site</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- <link rel="stylesheet" href="./CSS/style.css"> -->
     <link rel="stylesheet" href="./CSS/Login.css">
+    <link rel="stylesheet" href="nv.css"> 
     <link rel="stylesheet" media="screen and (max-width: 930px)" href="./CSS/phone.css">
 </head>
 
 <body>
     <div class="slider">
         <nav id="navbar">
+            <input id="nav-toggle" type="checkbox">
             <div id="logo">
                 <img src="logo/logo.png">
             </div>
-            <ul>
+            <ul class="links">
                 <li class="list"><a href="#home">Home</a></li>
                 <li class="list"><a href="#services-container">Services</a></li>
                 <li class="list"><a href="#client-section">Our clients</a></li>
                 <li class="list"><a href="#contact-section">Contact us</a></li>
             </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
         </nav>  
+    
         <section id="home">
             <h1 class="h-primary">Welcome to my OnlineMeal</h1>
             <p>Lorem ipsum. Reprehdolor doloribus fugit, expedita debitis quas rem soluta quam quo ipsam
             sapiente itaque?</p>
             <p>Lorem fugit, debitis rem soluta quam quo ipsam
             sapiente itaque?</p>
-
-            <!-- <a href="Login.html"> -->
+            <a href="Login.html"> 
                 <button class="btn" onclick="handleOrder()" id="btn">Order Now</button>
-            <!-- </a>  -->
-        </section>
+            </a> 
+         </section>
     </div>
         <section id="services-container">
             <h1 class="h-primary center">Our Services</h1>
@@ -108,7 +115,7 @@
             </form>
             
         </section>
-
+    
         <footer class="center">
             copyright &copy; www.onlineMeal.com. All right reserved!
         </footer>
@@ -117,7 +124,5 @@
                 document.location.href="Login.html";
             }
         </script>
-
-
 </body>
-</html>
+</html> 

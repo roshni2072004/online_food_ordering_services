@@ -1,30 +1,33 @@
 #logo {
-    margin: 0px 20px;
-    margin-top:5px ;
+    margin: 0px 10px;
+    margin-top:0px ;
 }
 #logo img{
-    height: 80px;
-    width: 80px;
+    height: 60px;
+    width: 60px;
+    margin-top:0px ;
 }
 
 #navbar::before{
-    height: 90px;
+    height: 62px;
 }
 #navbar{
     display: flex;
-    /* flex-direction: column; */
     margin:auto;
+    box-sizing: border-box;
+}
+nav .links{
+    box-sizing: border-box;
+    height: 60px;
+    margin-left: 0;
 }
 #navbar ul li {
     margin: 0px 0px;
 }
-#navbar li a{
-    font-size: 1.2rem;
-    padding: 0px 0px;
+nav .links a{
+    padding: 12px .5em;
 }
-
-
-.h-primary{
+/* .h-primary{
     font-size: 1.8rem;
     animation-name: heading;
     animation-duration: 1.5s;
@@ -37,9 +40,9 @@
     to{
         width: 110%;
     }
-}
+} */
 .h-secondary{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 .btn{
     font-size: 13px;
@@ -55,6 +58,10 @@
     padding: 5px 0px;
     margin-top: 10px;
 }
+#head{
+    width: 100%;
+    font-size: 30px;
+  }
 .slider{
     height: 350px;
 }
@@ -121,79 +128,34 @@
 #client-section #clients img{
     width: 55px;
     height: 55px;
+    margin: 2px 20px;
+
 }
 #client-section{
     display: flex;
     padding: 30px 0px;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 30px;
     height: 229px;
 }
-#client-section #clt{
-    font-size: 2rem;
+
+#client-section #clients {
+    margin-top: 5px;
 }
-#client-section #clients{
-    margin-top: 15px;
-}
-#client-section #clt{
-    margin-top : 0px;
-    margin-left: 20px;
-    padding: 20px 0px; 
-    font-size: 2rem;
-    animation-name: heading-client;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;   
-}
-@keyframes heading-client{
-    from{
-        width:70%;
-    }
-    to{
-        width: 45%;
-    }
-}  
 
 /* contact-section */
 #contact-section{
     margin-left: 0px;
     height: 288px;
     margin-bottom: 31px;
-}
-#contact-section #msg{
-    width: 250px;
-    height: 100px;
-    border-radius: 10px;
+    /* box-sizing: border-box; */
 }
 #contact-section .form-group {
     margin: 5px 20px;
 }
-#contact-section::before{
-    content: "";
-    position: absolute;
-    background: url('../logo/backlogo.jpg') no-repeat center center/cover;
-    width: 95%;
-    height: 290px;
-    z-index: -1;
-    border-radius: 35px;
-    opacity: 0.5;
-    margin-left: 3%;
-}
 #send{
-    margin-left: 60%;
+    margin-left: 2%;
     width: 80px;
-    height: 28px;
+    height: 35px;
 }
-
-/* footer section */
-footer{
-    margin-top: 10px;
-     font-weight: bold;
-    background-color: rgb(27, 25, 25);
-    color: white;
-    height: 25px;
-}
-
-
 

@@ -17,8 +17,7 @@
     box-sizing: border-box;
 }
 nav .links{
-    box-sizing: border-box;
-    height: 60px;
+    /* height: 405px; */
     margin-left: 0;
 }
 #navbar ul li {
@@ -115,7 +114,7 @@ nav .links a{
     flex-wrap: wrap;
 }
 #client-section::before{
-    height: 250px;
+    height: 270px;
 }
 #client-section .clients-items{
     flex-wrap: wrap;

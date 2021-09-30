@@ -69,7 +69,12 @@
   margin: 25px auto;
   text-align: center;
 }
+.social-icons img:hover{
+  opacity: 1;
+  background-color: #ff105f;
+}
 .social-icons img {
+  opacity: .7;
   width: 30px;
   height: 30px;
   margin: 0 12px;

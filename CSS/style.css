@@ -415,11 +415,11 @@ footer {
     float: none;
     position: fixed;
     z-index: 9;
-    left: 40%;
+    left: 50%;
     right: 0;
     top: 60px;
     bottom: 77%;
-    width: 70%;
+    width: 55%;
     height: auto;
     margin-bottom: 280px;
     flex-direction: column;

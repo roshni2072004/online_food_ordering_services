@@ -227,6 +227,8 @@ nav .icon-burger .line {
 }
 #home h1 {
   color: white;
+  font-weight: 600;
+  font-size: 35px;
   text-align: center;
 }
 .btn {
@@ -417,7 +419,7 @@ footer {
     right: 0;
     top: 60px;
     bottom: 77%;
-    width: 37%;
+    width: 42%;
     height: auto;
     margin-bottom: 280px;
     flex-direction: column;
